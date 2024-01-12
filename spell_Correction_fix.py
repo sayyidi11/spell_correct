@@ -348,6 +348,8 @@ if (selected == "Damerau Levenshtein Distance with Cache"):
 
     if st.experimental_user.email == 'makhdumsayyidi.com':
         st.write("benar")
+    else:
+        ("salah")
 
     if st.button("Data Cache  "):
         st.json(data_cache)
