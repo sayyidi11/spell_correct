@@ -345,6 +345,7 @@ if (selected == "Damerau Levenshtein Distance with Cache"):
     st.title("Koreksi Ejaan Damerau with Distibusi Kamus & Cache")
 
     st.header("_______________________________________")
+    st.write(st.experimental_user)
 
     if st.button("Data Cache  "):
         st.json(data_cache)
