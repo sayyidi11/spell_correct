@@ -16,10 +16,10 @@ with st.sidebar:
 
     default_index = 0
 
-with open("../data_cache.json", "r") as json_file:
+with open("data_cache.json", "r") as json_file:
     data_cache = json.load(json_file)
 
-df = pd.read_csv("../data_fix.csv")
+df = pd.read_csv("data_fix.csv")
 df["Panjang"] = df["a-beta"].apply(len)
 
 df_judul_berita = pd.read_excel("../Data_Berita_Pariwisata.xlsx")
@@ -213,7 +213,7 @@ if (selected == "Damerau Levenshtein Distance with Distribusi Kamus & Cache"):
         st.write(f"Lama Proses = {final_time} Detik")
 
         data_cache.update(cache)
-        with open("../data_cache.json", "w") as json_file:
+        with open("data_cache.json", "w") as json_file:
             json.dump(data_cache, json_file)
 
         st.header("_______________________________")
@@ -406,7 +406,7 @@ if (selected == "Damerau Levenshtein Distance with Cache"):
         st.write(f"Lama Proses = {final_time} Detik")
 
         data_cache.update(cache)
-        with open("../data_cache.json", "w") as json_file:
+        with open("data_cache.json", "w") as json_file:
             json.dump(data_cache, json_file)
 
         st.header("_______________________________")
