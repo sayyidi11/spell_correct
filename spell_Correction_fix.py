@@ -22,7 +22,7 @@ with open("data_cache.json", "r") as json_file:
 df = pd.read_csv("data_fix.csv")
 df["Panjang"] = df["a-beta"].apply(len)
 
-df_judul_berita = pd.read_excel("Data_Berita_Pariwisata.xlsx")
+df_judul_berita = pd.read_excel("https://github.com/sayyidi11/spell_correct/blob/main/Data_Berita_Pariwisata.xlsx")
 
 
 def validasi_kata(query_input):
