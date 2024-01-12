@@ -346,8 +346,7 @@ if (selected == "Damerau Levenshtein Distance with Cache"):
 
     st.header("_______________________________________")
 
-    if st.experimental_user.email == "None":
-        st.write("benar")
+    st.experimental_user.email
     else:
         ("salah")
 
