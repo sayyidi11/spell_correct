@@ -346,8 +346,7 @@ if (selected == "Damerau Levenshtein Distance with Cache"):
 
     st.header("_______________________________________")
 
-    if st.experimental_user['email'] == 'sayyidimakhdum@gmail.com':
-        st.write("benar")
+    st.experimental_user.email
     else:
         ("salah")
 
