@@ -345,9 +345,8 @@ if (selected == "Damerau Levenshtein Distance with Cache"):
     st.title("Koreksi Ejaan Damerau with Distibusi Kamus & Cache")
 
     st.header("_______________________________________")
-    nama_user = st.write(st.experimental_user)
 
-    if nama_user == "makhdumsayyidi@gmail.com":
+    if st.experimental_user.email == 'makhdumsayyidi.com':
         print("benar")
 
     if st.button("Data Cache  "):
