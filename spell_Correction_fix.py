@@ -346,7 +346,13 @@ if (selected == "Damerau Levenshtein Distance with Cache"):
 
     st.header("_______________________________________")
 
-    st.experimental_user.email
+    query_params = st.experimental_get_query_params()
+
+    # Mengakses nilai parameter email
+    user_email = query_params.get("email", ["default_email"])[0]
+    
+    # Menampilkan email pengguna
+    st.write(f"User Email: {user_email}")
 
     if st.button("Data Cache  "):
         st.json(data_cache)
